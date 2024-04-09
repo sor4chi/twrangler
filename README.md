@@ -12,7 +12,7 @@ Enhance your DX with configure your `wrangler.toml` file.
 ## Usage
 
 ```bash
-npm install twrangler
+npm install -D twrangler
 ```
 
 Write your `wrangler.config.ts` file.
