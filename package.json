@@ -18,6 +18,15 @@
   "dependencies": {
     "@twrangler/schema": "workspace:*"
   },
+  "author": "Sor4chi <sorakawa0218@gmail.com> (https://github.com/sor4chi)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sor4chi/twrangler"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "devDependencies": {
     "@biomejs/biome": "1.6.4",
     "typescript": "^5.4.4",
