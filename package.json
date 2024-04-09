@@ -8,12 +8,15 @@
     "build:schema": "pnpm --filter @twrangler/schema build",
     "build:self": "tsc",
     "build": "pnpm run build:schema && pnpm run build:core && pnpm run build:cli && pnpm run build:self",
-    "bin": "./dist/bin"
+    "bin": "./dist/bin",
+    "release": "pnpm build && changeset publish"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": "./dist/bin",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "packageManager": "pnpm@8.14.2",
   "dependencies": {
     "@twrangler/schema": "workspace:*"
@@ -29,6 +32,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.6.4",
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.1",
     "typescript": "^5.4.4",
     "vitest": "^1.4.0"
   }
