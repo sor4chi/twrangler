@@ -35,7 +35,7 @@ prefer to add `"prepare": "twrangler build"` in your package.json scripts.
 
 You can get generated `wrangler.toml` file in cwd.
 
-## Features
+## Features (Roadmap)
 
 - :zap: Configure `wrangler.toml` file in TypeScript with type support.
 - :rocket: Generate `wrangler.toml` file from TypeScript.
