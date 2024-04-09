@@ -1,4 +1,11 @@
 {
   "name": "twrangler",
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "scripts": {
+    "fix": "biome check --apply ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.6.4",
+    "vitest": "^1.4.0"
+  }
 }
