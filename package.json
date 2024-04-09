@@ -1,6 +1,6 @@
 {
   "name": "twrangler",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "fix": "biome check --apply .",
     "build:cli": "pnpm --filter @twrangler/cli build && rm -rf dist && cp -r packages/cli/dist .",
