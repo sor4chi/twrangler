@@ -12,5 +12,8 @@
   "formatter": {
     "enabled": true,
     "indentStyle": "space"
+  },
+  "files": {
+    "ignore": ["dist"]
   }
 }

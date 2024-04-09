@@ -1,5 +1,15 @@
 {
   "name": "@twrangler/core",
   "version": "0.0.0",
-  "private": true
+  "private": true,
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "vitest",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "@iarna/toml": "^2.2.5",
+    "@twrangler/schema": "workspace:*"
+  }
 }
