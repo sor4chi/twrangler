@@ -15,3 +15,7 @@ Enhance your DX with configure your `wrangler.toml` file.
 - :rocket: Generate `wrangler.toml` file from TypeScript.
 - :key: Built-in `.env` and `.vars` support.
 - :earth_americas: Multiple environment support.
+
+## License
+
+MIT
