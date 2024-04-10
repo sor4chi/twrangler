@@ -1,5 +1,11 @@
 # twrangler
 
+## 0.0.3
+
+### Patch Changes
+
+- [#5](https://github.com/sor4chi/twrangler/pull/5) [`ba34de0`](https://github.com/sor4chi/twrangler/commit/ba34de0dff706a7d1a64420e43dc0b8406505ae1) Thanks [@sor4chi](https://github.com/sor4chi)! - Fix resolve `esbuild` dependencies for `twrangler` package.
+
 ## 0.0.2
 
 ### Patch Changes
