@@ -1,5 +1,11 @@
 # twrangler
 
+## 0.0.2
+
+### Patch Changes
+
+- [#3](https://github.com/sor4chi/twrangler/pull/3) [`9351c6e`](https://github.com/sor4chi/twrangler/commit/9351c6ef7200d75793c2ba9a6b7f87649e9debc3) Thanks [@sor4chi](https://github.com/sor4chi)! - Fix dependencies to allow npm-import of `twrangler` package.
+
 ## 0.0.1
 
 ### Patch Changes
