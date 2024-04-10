@@ -1,3 +1,4 @@
+import dedent from "dedent";
 import { Twrangler } from ".";
 
 describe("Twrangler", () => {
@@ -5,6 +6,8 @@ describe("Twrangler", () => {
     it("should load a valid config", () => {
       const rawConfig = {
         name: "my-project",
+        main: "src/index.ts",
+        compatibility_date: "2022-03-21",
       };
       const twrangler = new Twrangler(rawConfig);
       expect(twrangler.config).toEqual(rawConfig);
@@ -22,9 +25,15 @@ describe("Twrangler", () => {
     it("should return a valid TOML string", () => {
       const rawConfig = {
         name: "my-project",
+        main: "src/index.ts",
+        compatibility_date: "2022-03-21",
       };
       const twrangler = new Twrangler(rawConfig);
-      expect(twrangler.toToml()).toEqual(`name = "my-project"\n`);
+      expect(twrangler.toToml().trim()).toEqual(dedent`
+        name = "my-project"
+        main = "src/index.ts"
+        compatibility_date = "2022-03-21"
+      `);
     });
   });
 });

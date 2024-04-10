@@ -11,5 +11,8 @@
   "dependencies": {
     "@iarna/toml": "^2.2.5",
     "@twrangler/schema": "workspace:*"
+  },
+  "devDependencies": {
+    "dedent": "^1.5.1"
   }
 }
