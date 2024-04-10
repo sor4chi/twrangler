@@ -3,20 +3,21 @@
   "version": "0.0.1",
   "scripts": {
     "fix": "biome check --apply .",
+    "check": "biome check .",
     "build:cli": "pnpm --filter @twrangler/cli build && rm -rf dist && cp -r packages/cli/dist .",
     "build:core": "pnpm --filter @twrangler/core build",
     "build:schema": "pnpm --filter @twrangler/schema build",
     "build:self": "tsc",
-    "build": "pnpm run build:schema && pnpm run build:core && pnpm run build:cli && pnpm run build:self",
+    "test:core": "pnpm --filter @twrangler/core test",
+    "test": "pnpm test:core",
+    "build": "pnpm build:schema && pnpm build:core && pnpm build:cli && pnpm build:self",
     "bin": "./dist/bin",
     "release": "pnpm build && changeset publish"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": "./dist/bin",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "packageManager": "pnpm@8.14.2",
   "dependencies": {
     "@twrangler/schema": "workspace:*"
