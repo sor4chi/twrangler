@@ -1,5 +1,12 @@
 # @twrangler/example-vanilla
 
+## 0.0.3
+
+### Patch Changes
+
+- Updated dependencies [[`ba34de0`](https://github.com/sor4chi/twrangler/commit/ba34de0dff706a7d1a64420e43dc0b8406505ae1)]:
+  - twrangler@0.0.3
+
 ## 0.0.2
 
 ### Patch Changes
