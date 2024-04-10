@@ -1,5 +1,13 @@
 # twrangler
 
+## 0.0.5
+
+### Patch Changes
+
+- [#10](https://github.com/sor4chi/twrangler/pull/10) [`bff20f2`](https://github.com/sor4chi/twrangler/commit/bff20f294272cad04b8078f50e14390a3e25dca6) Thanks [@sor4chi](https://github.com/sor4chi)! - Support all inheritable key fields
+
+  <https://developers.cloudflare.com/workers/wrangler/configuration/#inheritable-keys>
+
 ## 0.0.4
 
 ### Patch Changes
