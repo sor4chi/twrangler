@@ -4,13 +4,12 @@
   "scripts": {
     "fix": "biome check --apply .",
     "check": "biome check .",
-    "build:cli": "pnpm --filter @twrangler/cli build && rm -rf dist && cp -r packages/cli/dist .",
+    "build:cli": "pnpm --filter @twrangler/cli build && mkdir -p dist && cp -r packages/cli/dist/* dist",
     "build:core": "pnpm --filter @twrangler/core build",
-    "build:schema": "pnpm --filter @twrangler/schema build",
-    "build:self": "tsc",
+    "build:schema": "pnpm --filter @twrangler/schema build && mkdir -p dist && cp -r packages/schema/dist/* dist",
     "test:core": "pnpm --filter @twrangler/core test",
     "test": "pnpm test:core",
-    "build": "pnpm build:schema && pnpm build:core && pnpm build:cli && pnpm build:self",
+    "build": "pnpm build:schema && pnpm build:core && pnpm build:cli",
     "bin": "./dist/bin",
     "release": "pnpm build && changeset publish"
   },
@@ -20,7 +19,7 @@
   "files": ["dist"],
   "packageManager": "pnpm@8.14.2",
   "dependencies": {
-    "@twrangler/schema": "workspace:*"
+    "zod": "^3.22.4"
   },
   "author": "Sor4chi <sorakawa0218@gmail.com> (https://github.com/sor4chi)",
   "license": "MIT",
