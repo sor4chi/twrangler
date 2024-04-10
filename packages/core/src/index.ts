@@ -1,5 +1,5 @@
-import { type Config, configSchema } from "@twrangler/schema";
 import * as TOML from "@iarna/toml";
+import { type Config, configSchema } from "@twrangler/schema";
 
 export class Twrangler {
   config: Config;

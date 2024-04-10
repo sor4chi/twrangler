@@ -1,10 +1,10 @@
+import * as fs from "node:fs/promises";
+import * as path from "node:path";
 import { Twrangler } from "@twrangler/core";
+import * as esbuild from "esbuild";
+import * as pico from "picocolors";
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
-import * as fs from "node:fs/promises";
-import * as pico from "picocolors";
-import * as esbuild from "esbuild";
-import * as path from "node:path";
 
 const CONFIG_SOURCE_FILE = "wrangler.config.ts";
 const CONFIG_OUTPUT_FILE = "wrangler.toml";
