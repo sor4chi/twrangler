@@ -1,5 +1,14 @@
 # twrangler
 
+## 0.0.6
+
+### Patch Changes
+
+- [#13](https://github.com/sor4chi/twrangler/pull/13) [`a1574c7`](https://github.com/sor4chi/twrangler/commit/a1574c75a2b6863e004c637d38645fcfeb2b97de) Thanks [@sor4chi](https://github.com/sor4chi)! - Supports non inheritable keys
+
+  - Multi Environments Configuration
+  - Bindings
+
 ## 0.0.5
 
 ### Patch Changes
