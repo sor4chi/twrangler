@@ -1,8 +1,15 @@
-import type { z } from "zod";
+import { z } from "zod";
 
 import { inheritableKeysSchema } from "./inheritable-keys";
+import { nonInheritableKeysSchema } from "./non-inheritable-keys";
 
-export const configSchema = inheritableKeysSchema;
+export const configSchema = nonInheritableKeysSchema
+  .merge(inheritableKeysSchema)
+  .extend({
+    env: z
+      .record(nonInheritableKeysSchema.merge(inheritableKeysSchema.partial()))
+      .optional(),
+  });
 
 export type Config = z.infer<typeof configSchema>;
 

@@ -9,6 +9,7 @@ import { routeSchema, routesSchema } from "./route";
 import { rulesSchema } from "./rule";
 import { triggersSchema } from "./trigger";
 
+// ref: https://developers.cloudflare.com/workers/wrangler/configuration/#inheritable-keys
 export const inheritableKeysSchema = z.object({
   name: z.string(),
   main: z.string(),
