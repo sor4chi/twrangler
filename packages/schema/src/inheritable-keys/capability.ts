@@ -2,7 +2,6 @@ import { z } from "zod";
 
 // ref: https://developers.cloudflare.com/workers/configuration/compatibility-dates
 export const compatibilityDateSchema = z.enum([
-  "2024-04-29",
   "2024-04-03",
   "2024-04-01",
   "2024-03-26",
@@ -29,6 +28,7 @@ export const compatibilityDateSchema = z.enum([
 // ref: https://developers.cloudflare.com/workers/configuration/compatibility-dates/#compatibility-flags
 export const compatibilityFlagsSchema = z.array(
   z.enum([
+    "nodejs_compat",
     "brotli_content_encoding",
     "no_brotli_content_encoding",
     "rpc",
