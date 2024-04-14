@@ -28,6 +28,7 @@ export const compatibilityDateSchema = z.enum([
 // ref: https://developers.cloudflare.com/workers/configuration/compatibility-dates/#compatibility-flags
 export const compatibilityFlagsSchema = z.array(
   z.enum([
+    "nodejs_compat",
     "brotli_content_encoding",
     "no_brotli_content_encoding",
     "rpc",
