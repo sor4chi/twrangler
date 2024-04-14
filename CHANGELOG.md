@@ -1,5 +1,11 @@
 # twrangler
 
+## 0.0.7
+
+### Patch Changes
+
+- [#15](https://github.com/sor4chi/twrangler/pull/15) [`7c1d055`](https://github.com/sor4chi/twrangler/commit/7c1d05560edca7a82733d07ef74c3f0e303c8fdf) Thanks [@sor4chi](https://github.com/sor4chi)! - Update compatibility dates and compatibility flags schema
+
 ## 0.0.6
 
 ### Patch Changes
