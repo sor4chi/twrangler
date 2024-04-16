@@ -13,6 +13,6 @@ export const configSchema = nonInheritableKeysSchema
 
 export type Config = z.infer<typeof configSchema>;
 
-export function defineConfig(config: Config): Config {
-  return config;
+export function defineConfig(config: Config | (() => Config)): Config {
+  return typeof config === "function" ? config() : config;
 }
