@@ -1,5 +1,20 @@
 # twrangler
 
+## 0.0.8
+
+### Patch Changes
+
+- [#17](https://github.com/sor4chi/twrangler/pull/17) [`8b35704`](https://github.com/sor4chi/twrangler/commit/8b357049f33a253d570858bdc39b6e437ee1dc7b) Thanks [@sor4chi](https://github.com/sor4chi)! - dynamic config supports.
+
+  ```ts
+  export default defineConfig(() => {
+    return {
+      name: "sumple-worker",
+      // ...
+    };
+  });
+  ```
+
 ## 0.0.7
 
 ### Patch Changes
