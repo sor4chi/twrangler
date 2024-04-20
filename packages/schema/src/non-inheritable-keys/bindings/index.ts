@@ -11,6 +11,7 @@ import { kvNamespacesSchema } from "./kv-namespaces";
 import { mtlsCertificatesSchema } from "./mtls-certificates";
 import { queuesSchema } from "./queues";
 import { r2BucketsSchema } from "./r2-buckets";
+import { serviceBindingsSchema } from "./service-bindings";
 import { vectorizeSchema } from "./vectorize-indexes";
 
 // ref: https://developers.cloudflare.com/workers/wrangler/configuration/#non-inheritable-keys
@@ -27,6 +28,7 @@ export const bindingsKeysSchema = z.object({
   queues: queuesSchema.optional(),
   r2_buckets: r2BucketsSchema.optional(),
   vectorize: vectorizeSchema.optional(),
+  services: serviceBindingsSchema.optional(),
   analytics_engine_datasets: analyticsEngineDatasetsSchema.optional(),
   mtls_certificates: mtlsCertificatesSchema.optional(),
   ai: aiSchema.optional(),
