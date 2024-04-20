@@ -1,5 +1,11 @@
 # twrangler
 
+## 0.0.9
+
+### Patch Changes
+
+- [#20](https://github.com/sor4chi/twrangler/pull/20) [`e5e4764`](https://github.com/sor4chi/twrangler/commit/e5e476421bb611c288cc9292c0391585ba562aff) Thanks [@sushi-chaaaan](https://github.com/sushi-chaaaan)! - Add services to bindings schema
+
 ## 0.0.8
 
 ### Patch Changes
