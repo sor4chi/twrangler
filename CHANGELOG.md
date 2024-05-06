@@ -1,5 +1,11 @@
 # twrangler
 
+## 0.0.10
+
+### Patch Changes
+
+- [#23](https://github.com/sor4chi/twrangler/pull/23) [`f361734`](https://github.com/sor4chi/twrangler/commit/f36173416c8d8cf706e6167e0ba98d05b60d3492) Thanks [@sor4chi](https://github.com/sor4chi)! - Add `2024-04-29` for compatibility date
+
 ## 0.0.9
 
 ### Patch Changes
