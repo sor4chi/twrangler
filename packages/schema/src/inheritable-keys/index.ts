@@ -3,7 +3,7 @@ import { buildSchema } from "./build";
 import {
   compatibilityDateSchema,
   compatibilityFlagsSchema,
-} from "./capability";
+} from "./compatibility";
 import { limitsSchema } from "./limits";
 import { routeSchema, routesSchema } from "./route";
 import { rulesSchema } from "./rule";
