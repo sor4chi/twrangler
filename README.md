@@ -1,7 +1,7 @@
 # TWrangler
 
-> [!WARNING]
-> This project is still in early development. Please use it with caution!
+> [!IMPORTANT]
+> This project is now archived as the wrangler package now provides the json schema.
 
 TWrangler is a simple tool to help you to manage `wrangler.toml` file for Cloudflare Stacks.
 
